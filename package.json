@@ -11,7 +11,7 @@
     "backend:graphql-codegen": "nx run backend:graphql-codegen && nx format:write",
     "orm:migration:run": "nx run backend:run-migration",
     "orm:migration:revert": "nx run backend:revert-migration",
-    "orm:migration:generate": "nx run backend:generate-migration",
+    "orm:migration:generate": "nx run backend:generate-migration ./migration",
     "orm:drop-schema": "nx run backend:drop-schema",
     "build": "nx build",
     "test": "nx test",
