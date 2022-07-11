@@ -35,9 +35,14 @@ export type QueryRecipeArgs = {
   id: Scalars['ID'];
 };
 
+export type CreateQueryRecipeArgs = {
+  title: string;
+}
+
 export type Recipe = {
   __typename?: 'Recipe';
   id?: Maybe<Scalars['ID']>;
+  title?: Maybe<String>;
 };
 
 export type WithIndex<TObject> = TObject & Record<string, any>;
